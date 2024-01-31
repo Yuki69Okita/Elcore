@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- JQuery -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--Favicon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="index.css">
+  <script defer type="text/javascript" src="index.js"></script>
+
+  <title>Elcore</title>
+  <link rel="icon" href="Pics/Logos/elcore-small.png">
+</head>
+
+<body>
+  <section class="beginning">
+
+    <!--Menu-->
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark py-2">
+        <a class="navbar-brand ml-4" href="elcore-bg.html">
+          <img src="Pics/Logos/ELCORE_logo_fullcolor_cmyk.png" alt="Logo" id="logo-navbar">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end mx-4" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="elcore-bg.html">Начало</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/Services page/services.html">Услуги</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/Products page/products.html">Продукти</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/For us page/for_us.html">За нас</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="Pages/Contats page/contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!--Header-->
+    <div class="slider">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="Pics/Main part/Home.jpg" alt="Main picture">
+          </div>
+        </div>
+      </div>
+
+      <!--Button-->
+      <div class="text-center">
+        <a href="#services">
+          <button class="btn btn-dark" type="button" id="scroll_button"><span>Към услугите</span></button>
+        </a>
+      </div>
+
+      <div class="not-for-show" style="display: none;">
+        <p>My github: https://github.com/Yuki69Okita</p>
+      </div>
+  </section>
+
+
+  <section class="middle">
+
+    <!--Notes-->
+    <div class="notes">
+      <h1 class="text-center pb-5">За нас:</h1>
+
+      <div class="row">
+        <ul class="notes_list">
+          <!--Note 1-->
+          <li>
+            <div class="rotate-1 bg-dark text-white">
+              <h4 class="text-center p-4">Идеология:</h4>
+              <p class="pl-3">&nbsp;&nbsp;Професионализъм съсредоточен в проектирането и изграждането на инвестиционни
+                проекти за нуждите на своите настоящи и бъдещи клиенти.</p>
+            </div>
+          </li>
+
+          <!--Note 2-->
+          <li>
+            <div class="rotate-2 bg-light text-dark">
+              <h4 class="text-center p-4">Експертиза:</h4>
+              <p class="pl-3">-	Проектиране на ФЕЦ и ел. инсталации; <br>
+                -	Консултация в областта на проектирането и изграждането на ФЕЦ и ел. инсталации; <br>
+                -	Изграждане; <br>
+                -	Поддръжка и ремонт.
+                
+              </p>
+            </div>
+          </li>
+
+          <!--Note 3-->
+          <li>
+            <div class="rotate-1 bg-dark text-white">
+              <h4 class="text-center p-4">Корпоративна култура и бизнес етика:</h4>
+              <p class="pl-3">-	Уважение; <br>
+                -	Безкомпромисно качество; <br>
+                -	Коректност; <br>
+                -	Професионализъм; <br>
+                -	Ефективен принос; <br>
+                -	Иновативно развитие; <br>
+                -	Позитивизъм; <br>
+                -	Отдаденост.
+                
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!--Services-->
+    <div class="services" id="services">
+      <h1 class="text-center pb-5">Услуги:</h1>
+
+
+      <div class="card-deck">
+        <!--Card 1-->
+        <div class="card text-white bg-dark">
+          <img class="card-img-top" src="Pics/Cards/card-1.jpg" alt="Card-1 image">
+
+          <div class="card-body">
+            <h5 class="card-title text-center pt-2">ФЕЦ</h5>
+            <hr>
+            <p class="card-text text-left px-3">&nbsp;&nbsp;Този процес започва с предварително консултиране и оглед на
+              имота. Уточняване на възможните места и площи за разполагане на фотоволтаични панели...</p>
+          </div>
+
+          <div class="card-footer">
+            <a href="Pages/Services page/services.html#FEC">
+              <p class="text-right">Вижте повече</p>
+            </a>
+          </div>
+        </div>
+
+        <!--Card 2-->
+        <div class="card text-white bg-dark">
+          <img class="card-img-top" src="Pics/Cards/card-2.jpg" alt="Card-2 image">
+
+          <div class="card-body">
+            <h5 class="card-title text-center pt-2">Жилищни и
+              обществени сгради</h5>
+            <hr>
+            <p class="card-text text-left px-3">&nbsp;&nbsp;Със своя висококвалифициран екип от специалисти ние
+              предлагаме
+              проектиране и изграждане на ел. инсталации на европейско ниво...</p>
+          </div>
+
+          <div class="card-footer">
+            <a href="Pages/Services page/services.html#JOS">
+              <p class="text-right">Вижте повече</p>
+            </a>
+          </div>
+        </div>
+
+        <!--Card 3-->
+        <div class="card text-white bg-dark">
+          <img class="card-img-top" src="Pics/Cards/card-3.jpg" alt="Card-3 image">
+
+          <div class="card-body">
+            <h5 class="card-title text-center pt-2">Производствени
+              сгради</h5>
+            <hr>
+            <p class="card-text text-left px-3">&nbsp;&nbsp;Нашият проектантски екип с богат опит в проектирането на
+              всякакъв вид електро инсталации, организирането и ръководенето на различни по сложност, големина и
+              предназначение проекти в различни сфери...</p>
+          </div>
+
+          <div class="card-footer">
+            <a href="Pages/Services page/services.html#PS">
+              <p class="text-right">Вижте повече</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--Clients-->
+    <div class="clients">
+      <h1 class="text-center pb-3">На нас ни се довериха:</h1>
+
+      <div class="gallery">
+        <img src="Pics/Logos/Green-Energy-Logo.jpg" title="Green Energy">
+        <img src="Pics/Logos/Inter-power.png" title="Inter Power OOD">
+        <img src="Pics/Logos/Dalsia.png" title="Dalsia Bulgaria">
+        <img src="Pics/Logos/Air-Liquide.jpg" title="Air Liquide Bulgaria">
+        <img src="Pics/Logos/Comfort.jpg" title="Architectural studio COMFORT">
+      </div>
+    </div>
+    
+    <!--Partners-->
+    <div class="partners">
+      <h1 class="text-center pb-3">Партньори:</h1>
+
+      <div class="gallery">
+        <img src="Pics/Logos/TMT-Elkom-logo.jpg" title="TMT Elkom">
+        <img src="Pics/Logos/Huawei-logo.png" title="Huawei">
+        <img src="Pics/Logos/SOLAX-power-logo.png" title="Solax Power">
+        <img src="Pics/Logos/releta.png" title="Releta.bg">
+        <img src="Pics/Logos/Jinko-Solar-logo.png" title="Jinko Solar">
+        <img src="Pics/Logos/LONGI-Solar-logo.png" title="Longi Solar">
+      </div>
+    </div>
+  </section>
+
+  <section class="end">
+
+    <!--Footer-->
+    <div class="footer">
+      <footer class="d-flex flex-wrap justify-content-between py-2 bg-dark text-white">
+        <div class="col-md-4 d-flex align-items-center">
+          <a class="navbar-brand ml-4" href="elcore-bg.html">
+            <img src="Pics/Logos/ELCORE_logo_fullcolor_cmyk.png" alt="Logo" id="logo-footer">
+          </a>
+        </div>
+
+        <ul class="nav col-md-6 justify-content-end list-unstyled d-flex p-2">
+          <li class="ms-3 pt-1" id="phone"><a class="fa fa-phone">&nbsp;&nbsp;0892 938 147 – инж. Венелин Симеонов<svg
+                class="bi" width="30" height="24"></svg></a></li>
+          <li class="ms-3 pt-1" id="email"><a class="fa fa-envelope" href="mailto:info@elcore.bg">&nbsp;&nbsp;info@elcore.bg<svg class="bi"
+                width="30" height="24"></svg></a></li>
+          <li class="ms-3 pt-1"><a class="fa fa-facebook" target="_blank"
+              href="https://www.facebook.com/profile.php?id=61554967061931&is_tour_completed=true"><svg class="bi"
+                width="30" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+</body>
+
+</html>

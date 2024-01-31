@@ -1,0 +1,306 @@
+:root {
+    --bg-color: rgb(236, 220, 220);
+    --bg-elements-color: rgb(52, 58, 64);
+    --font-style: sans-serif, serif;
+    --text-color: rgb(255, 255, 255);
+    --font-weight: bold;
+    --text-shadow: 4px var(--bg-elements-color);
+    --text-shaow-mobile: 2px var(--bg-elements-color);
+    --main-header-size: 4vw;
+    --header-size: 1.8vw;
+    --small-font-size: 18px;
+    --big-font-size: 26px;
+    --mobile-font-size: 1.4rem;
+    --border: 2px solid var(--bg-elements-color);
+    --border-radius: 21px;
+    --border-shadow: 15px 15px 5px 3px rgba(52, 58, 64, 0.528);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-style);
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+
+/*Navbar*/
+.navbar-nav {
+    font-size: var(--small-font-size);
+}
+
+.active_link {
+    color: var(--text-color) !important;
+    font-weight: var(--font-weight);
+}
+
+nav.sticky {
+    opacity: 0.8;
+}
+
+#logo-navbar, #logo-footer {
+    height: 25px;
+}
+
+
+/*Header*/
+.slider {
+    margin-top: 2.8%;
+}
+
+.d-block {
+    height: 30vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 20%;
+    bottom: auto;
+}
+
+.carousel-caption h1 {
+    font-size: var(--main-header-size);
+    font-weight: var(--font-weight);
+    color: var(--text-color);
+    -webkit-text-stroke: var(--text-shadow);
+}
+
+
+/*Shortcuts*/
+.shortcuts {
+    height: 300px;
+}
+
+.shortcuts_header {
+    padding-top: 6%;
+}
+
+.filter-menu {
+    width: 100%;
+    list-style: none;
+    margin-top: -20px;
+    position: relative;
+    z-index: 999;
+}
+
+.filter {
+    display: inline;
+    background-color: var(--bg-elements-color);
+    padding: 1rem 2rem;
+    border: 1px solid white;
+}
+
+.filter:hover {
+    background-color: rgb(33, 37, 41);
+    cursor: pointer;
+}
+
+.filter a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: var(--small-font-size);
+    font-weight: var(--font-weight);
+    padding: 1rem 2rem;
+}
+
+#left_button {
+    border-top-left-radius: var(--border-radius) !important;
+    border-bottom-left-radius: var(--border-radius) !important;
+    border-right: 0.1px solid var(--text-color);
+}
+
+#right_button {
+    border-top-right-radius: var(--border-radius) !important;
+    border-bottom-right-radius: var(--border-radius) !important;
+    border-left: 0.1px solid var(--text-color);
+}
+
+
+/*Services*/
+.services {
+    margin: 5%;
+}
+
+.row {
+    margin-top: 5%;
+}
+
+.services hr {
+    border-top: var(--border);
+    width: 30%;
+    margin: auto;
+}
+
+.services hr::before {
+    content: '▣';
+    display: block;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    margin-top: -27px;
+    color: var(--bg-elements-color);
+}
+
+.services h1 {
+    font-size: var(--header-size);
+    font-weight: var(--font-weight);
+}
+
+.services p,
+.services li {
+    font-size: var(--small-font-size);
+}
+
+.show-stages button {
+    font-size: var(--small-font-size);
+    border-radius: var(--border-radius);
+    height: 60px;
+    width: 270px;
+    margin-top: 2rem;
+}
+
+.hide {
+    display: none;
+}
+
+.picture-right-side,
+.picture-left-side {
+    margin: auto;
+}
+
+.picture-right-side img,
+.picture-left-side img {
+    width: 90%;
+    height: 90%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+}
+
+/*Modal*/
+.modal-body {
+    border-top: var(--border);
+    border-bottom: var(--border);
+}
+
+.modal-body p,
+.modal-body li {
+    margin-bottom: 8px;
+    font-size: var(--small-font-size);
+}
+
+.modal-title {
+    margin: auto;
+    font-weight: var(--font-weight);
+}
+
+.btn-close {
+    width: 50px;
+    height: 50px;
+    background-color: var(--text-color);
+    font-size: var(--small-font-size);
+    border: 0;
+}
+
+.modal-footer button {
+    font-size: var(--small-font-size);
+}
+
+
+/*Footer*/
+.footer {
+    bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer ul li {
+    font-size: var(--small-font-size);
+}
+
+/*Phone*/
+@media (max-width: 992px) {
+
+    /*Navbar*/
+    .nav-link {
+        text-align: center;
+        border-bottom: 0.3px solid;
+    }
+
+    /*Header*/
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+        -webkit-text-stroke: var(--text-shaow-mobile);
+    }
+
+    /*Filters*/
+    .filter-menu,
+    .hide_mobile,
+    #phone {
+        display: none;
+    }
+
+    /*Serverces*/
+    .services h1 {
+        font-size: 2rem;
+    }
+
+    .services .col {
+        padding: 1rem !important;
+        flex-basis: auto;
+    }
+
+    .services .col p {
+        margin-bottom: 1rem;
+    }
+
+    .show-stages button {
+        margin-top: 1rem !important;
+        font-size: 1.2rem;
+    }
+
+    .hide {
+        display: block;
+        margin: auto;
+    }
+
+    .services hr::before {
+        font-size: 25px;
+        left: 48%;
+        margin-top: -19px;
+    }
+
+    /*Modal*/
+    .modal-title {
+        font-weight: var(--font-weight);
+        font-size: 1.6rem;
+    }
+
+    .modal-body p,
+    .modal-body li {
+        margin-bottom: 10px;
+        font-size: var(--mobile-font-size);
+        padding: 0 1rem !important;
+    }
+
+    .modal-body li {
+        padding: 0 !important;
+    }
+
+    .modal-body ul {
+        padding: 0 2rem !important;
+    }
+
+}

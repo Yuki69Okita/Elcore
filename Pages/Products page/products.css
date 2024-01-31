@@ -1,0 +1,360 @@
+:root {
+    --bg-color: rgb(236, 220, 220);
+    --bg-elements-color: rgb(52, 58, 64);
+    --font-style: sans-serif, serif;
+    --text-color: rgb(255, 255, 255);
+    --font-weight: bold;
+    --text-shadow: 4px var(--bg-elements-color);
+    --text-shaow-mobile: 2px var(--bg-elements-color);
+    --main-header-size: 4vw;
+    --header-size: 1.8vw;
+    --small-font-size: 18px;
+    --big-font-size: 26px;
+    --mobile-font-size: 1.4rem;
+    --border: 2px solid var(--bg-elements-color); 
+    --border-radius: 21px;
+    --border-shadow: -1em -1em 1em rgba(52, 58, 64, 0.769);
+    --border1-shadow: 1em 1em 1em rgba(52, 58, 64, 0.769);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font-style);
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+
+/*Navbar*/
+.navbar-nav {
+    font-size: var(--small-font-size);
+}
+
+.active_link {
+    color: var(--text-color) !important;
+    font-weight: var(--font-weight);
+}
+
+nav.sticky {
+    opacity: 0.8;
+}
+
+#logo-navbar, #logo-footer {
+    height: 25px;
+}
+
+
+/*Header*/
+.slider {
+    margin-top: 2.8%;
+}
+
+.d-block {
+    height: 30vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 20%;
+    bottom: auto;
+}
+
+.carousel-caption h1 {
+    font-size: var(--main-header-size);
+    font-weight: var(--font-weight);
+    color: var(--text-color);
+    -webkit-text-stroke: var(--text-shadow);
+}
+
+
+/*Products*/
+.products-row {
+    margin-top: 6%;
+    width: 100%;
+}
+
+.products-row-2 {
+    margin-top: 1%;
+    width: 100%;
+}
+
+.border {
+    display: block;
+    height: 400px;
+    width: 110%;
+    background-color: var(--bg-elements-color);
+    margin-left: 25%;
+    padding-right: 10%;
+    padding-left: 3%;
+    border: 0 !important;
+    box-shadow: var(--border-shadow);
+    -moz-box-shadow: var(--border-shadow);
+    -webkit-box-shadow: var(--border-shadow);
+}
+
+.border-1 {
+    display: block;
+    height: 400px;
+    width: 110%;
+    background-color: var(--bg-elements-color);
+    margin-left: -30%;
+    padding-right: 3%;
+    padding-left: 5%;
+    border: 0 !important;
+    box-shadow: var(--border1-shadow);
+    -moz-box-shadow: var(--border1-shadow);
+    -webkit-box-shadow: var(--border1-shadow);
+}
+
+#huawei-border {
+    height: 450px;
+}
+
+#longi-border {
+    height: 500px;
+    margin-bottom: 5rem;
+}
+
+.border hr, .border-1 hr {
+    background-color: var(--text-color);
+    width: 50%;
+    margin: auto;
+}
+
+.border h1, .border-1 h1 {
+    font-size: var(--header-size);
+    text-shadow: var(--text-shadow);
+    font-weight: var(--font-weight);
+    color: var(--text-color);
+    padding: 0 5rem;
+}
+
+.border p, .border-1 p {
+    font-size: var(--small-font-size);
+    padding: 0 5rem;
+    color: var(--text-color);
+    text-size-adjust: auto;
+}
+
+.product-img {
+    margin-top: 1%;
+    margin-left: 18%;
+    width: 65%;
+    margin-bottom: 5%;
+    position: relative;
+}
+
+.product-img-1 {
+    margin-left: 35%;
+    z-index: 999;
+    position: relative;
+}
+
+#jinko-product {
+    height: 600px;
+    margin-top: -9%;
+}
+
+#longi-product {
+    margin-top: -5% !important;
+    margin-left: 12%;
+    width: 80%;
+}
+
+#solax-product {
+    width: 40%;
+    height: 80%;
+}
+
+.mobile_text, .show-text-btn {
+    display: none;
+}
+
+
+/*Footer*/
+.footer {
+    bottom: 0;
+}
+
+.footer a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.footer ul li {
+    font-size: var(--small-font-size);
+}
+
+
+/*Laptop*/
+@media (max-width: 1630px) {
+
+    /*Products*/
+    #huawei-border {
+        height: 550px;
+    }
+    
+    #solax-border {
+        height: 420px;
+    }
+
+    #longi-border {
+        height: 600px;
+    }
+
+    #jinko-product {
+        margin-left: 25%;
+    }
+
+    #huawei-product {
+        margin-top: 10%;
+    }
+
+    #solax-product {
+        margin-top: 5%;
+    }
+
+    #longi-product {
+        margin-top: 13% !important;
+    }
+}
+
+
+/*Phone*/
+@media (max-width: 992px) {
+
+    /*Navbar*/
+    .nav-link {
+        text-align: center;
+        border-bottom: 0.3px solid;
+    }
+
+    .navbar-nav {
+        font-size: 1.1rem;
+    }
+
+
+    /*Header*/
+    .carousel-caption {
+        margin-left: -5px !important;
+    }
+
+    .carousel-caption h1 {
+        font-size: 2.5rem;
+        -webkit-text-stroke: var(--text-shaow-mobile);
+    }
+
+
+    /*Products*/
+    .products {
+        width: 100%;
+    }
+
+    .col {
+        flex-basis: auto;
+    }
+
+    .border, .border-1 {
+        margin-left: 4%;
+        width: 99%;
+        margin-top: 3%;
+        box-shadow: 0 0 0;
+    }
+    
+    #huawei-border {
+        height: 580px;
+    }
+
+    #jinko-border {
+        height: 560px;
+    }
+
+    #solax-border {
+        height: 610px;
+        padding: 2%;
+    }
+
+    #longi-border {
+        height: 550px;
+    }
+
+    .border hr, .border-1 hr {
+        margin-bottom: 2rem !important;
+    }
+
+    .border h1, .border-1 h1 {
+        font-size: 2.5rem;
+        padding: 2rem 0 0 !important;
+    }
+
+    .border p, .border-1 p {
+        padding: 0 1rem;
+        font-size: var(--small-font-size);
+    }
+
+    #huawei-product{
+        margin-top: -255px;
+    }
+
+    #jinko-product {
+        margin-left: 35px;
+        height: 300px;
+        margin-bottom: -900px;
+        transform: rotate(-75deg);
+    }
+
+    #solax-product {
+        margin-top: -250px;
+        margin-left: 130px;
+        height: 195.6px;
+    }
+
+    #longi-product {
+        margin-bottom: -880px;
+        margin-left: 35px;
+    }
+
+    .show-text-btn {
+        z-index: 999;
+        position: relative;
+    }
+
+    .show-text-btn button{
+        font-size: 18px;
+        font-weight: var(--font-weight);
+        border-radius: var(--border-radius);
+        border: 1px solid var(--text-color);
+    }
+
+    /*Modal*/
+    .modal-body {
+        border-top: var(--border);
+        border-bottom: var(--border);
+    }
+
+    .modal-body p {
+        margin-bottom: 0;
+    }
+
+    .modal-title {
+        margin: auto;
+    }
+
+    .btn-close {
+        background-color: var(--text-color);
+        border: 0;
+    }
+
+    .pc_text,
+    #phone {
+        display: none;
+    }
+
+    .mobile_text, .show-text-btn {
+        display:block;
+    }
+}
