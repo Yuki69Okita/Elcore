@@ -330,11 +330,11 @@ nav.sticky {
 
     .notes_list li {
         margin: auto;
-        padding-left: 12%;
+        padding-left: 17%;
     }
 
     .notes_list li div {
-        height: 450px;
+        height: 460px;
         width: 300px;
     }
 

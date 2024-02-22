@@ -21,3 +21,11 @@ window.addEventListener("scroll", function(){
         nav.classList.remove("sticky");
     }
 })
+
+
+//Closing outside the menu
+$(document).click(function(e) {
+	if (!$(e.target).is('.navbarNav')) {
+    	$('.collapse').collapse('hide');	    
+    }
+});

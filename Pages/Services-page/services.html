@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/css/bootstrap.min.css"
+    integrity="sha512-T584yQ/tdRR5QwOpfvDfVQUidzfgc2339Lc8uBDtcp/wYu80d7jwBgAxbyMh0a9YM9F8N3tdErpFI8iaGx6x5g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- JQuery -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.1/js/bootstrap.min.js"
+    integrity="sha512-UR25UO94eTnCVwjbXozyeVd6ZqpaAE9naiEUBK/A+QDbfSTQFhPGj5lOR6d8tsgbBk84Ggb5A3EkjsOgPRPcKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <!--Favicon-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link rel="stylesheet" href="services.css">
+  <script defer type="text/javascript" src="../../index.js"></script>
+
+  <title>Elcore > Услуги</title>
+  <link rel="icon" href="../../Pics/Logos/elcore-small.png">
+</head>
+
+<body>
+  <section class="beginning">
+
+    <!--Menu-->
+    <div class="menu">
+      <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark py-2">
+        <a class="navbar-brand ml-4" href="../../index.html">
+          <img src="../../Pics/Logos/ELCORE_logo_fullcolor_cmyk.png" alt="Logo" id="logo-navbar">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end mx-4" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../../index.html">Начало</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="">Услуги</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../Products-page/products.html">Продукти</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../For-us-page/for_us.html">За нас</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="../Contats-page/contacts.html">Контакти</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+
+    <!--Header-->
+    <div class="slider">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="../../Pics/Main/Industry.jpg" alt="Main picture">
+            <div class="carousel-caption">
+              <h1 class="pt-4">У с л у г и</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Shortcuts-->
+    <div class="filter-wraper text-center">
+      <ul class="filter-menu">
+        <li class="filter" id="left_button">
+          <a class="scroll-to-item" href="#FEC">Фотоволтаични електроцентрали</a>
+        </li>
+
+        <li class="filter">
+          <a class="scroll-to-item" href="#JOS">Жилищни и
+            обществени сгради</a>
+        </li>
+
+        <li class="filter" id="right_button">
+          <a class="scroll-to-item" href="#PS">Производствени
+            сгради</a>
+        </li>
+      </ul>
+    </div>
+
+  </section>
+
+
+  <section class="middle">
+
+    <!--Services-->
+    <div class="services">
+
+      <!--Service 1-->
+      <div class="row mb-5" id="FEC">
+        <div class="col text-left-side p-5">
+          <h1 class="mb-3 px-2">Проектиране и изграждане на ФЕЦ (фотоволтаични електроцентрали):</h1>
+          <p class="pt-3 px-1">&nbsp;&nbsp;&nbsp;&nbsp;<b>ELOCRE</b> предлага на своите клиенти пълен инженеринг при
+            реализацията на всякакъв вид фотоволтаични електроцентрали (ФЕЦ). Ние ще вървим с Вас през целия път – от
+            проектирането на идеята до самата й реализация.</p><br>
+          <p class="hide_mobile"><b>Проектиране и изграждане на:</b></p>
+          <ul class="hide_mobile px-5">
+            <li><b>ФЕЦ за собствени нужди;</b></li>
+            <li><b>ФЕЦ за собствени нужди и продажба на ел. енергия;</b></li>
+            <li><b>ФЕЦ за продажба на ел. енергия;</b></li>
+            <li><b>Батерийни стопанства към ФЕЦ за битови и промишлени цели.</b></li>
+          </ul>
+
+          <div class="show-stages text-center">
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#reg-modal">Основни
+              етапи</button>
+
+            <button type="button" class="btn btn-dark hide" data-toggle="modal"
+              data-target="#reg-modal-mobile">Дейности</button>
+          </div>
+        </div>
+
+        <div class="col picture-right-side p-0">
+          <img class="rounded mx-auto d-block" src="../../Pics/Service/Service-1.jpeg" alt="Service one">
+        </div>
+      </div>
+      <hr>
+
+      <!--Modal 1-->
+      <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="FEC-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="FEC-modal-title">Основните етапи за реализация на всяка ФЕЦ са:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li>Изготвяне на <b>Идейни проекти</b> – съобразно възножбостите на терена и заданието на клиента.</li>
+                <li>Снабдяване с виза за проектиране на ФЕЦ – от главния архитект на съответната община;</li>
+                <li><b>Проучване</b> на условията и начина за присъединяване на ФЕЦ към електроразпределителната мрежа – от съответното ЕРП</li>
+                <li>Изготвяне на <b>Технически проекти</b> – съобразно издадено становище, нормативните изисквания и задание на клиента.</li>
+                <li><b>Съгласуване</b> на проектната документация – със съответните институции – ЕРП, ВиК, БТК, РИОСВ, общини, други;</li>
+                <li>Издаване на <b>Разрешение за строеж</b> на ФЕЦ – от съответната Община;</li>
+                <li>Сключване на <b>Договор за присъединяване</b> на ФЕЦ към ЕРМ със съответното ЕРП</li>
+                <li><b>Изграждане на ФЕЦ</b>;</li>
+                <li><b>Въвеждане в експлоатация;</b></li>
+                <li><b>Приемане на изградената ФЕЦ</b> – от Електроразпределителното дружество или РДНСК;</li>
+                <li>Сключване на <b>Договор за изкупуване</b> на произведената електроенергия – с лицензиран търговец на
+                  електрическа енергия.</li>
+                <li><b>Регистриране в АУЕР</b>;</li> 
+                <li><b>Включване на ФЕЦ в паралел към електроразпределителната мрежа</b>.</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal Mobile-->
+      <div class="modal fade" id="reg-modal-mobile" tabindex="-1" aria-labelledby="FEC-modal-title-mobile"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="FEC-modal-title-mobile">Проектиране и изграждане на:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li><b>ФЕЦ за собствени нужди;</b></li>
+                <li><b>ФЕЦ за собствени нужди и продажба на ел. енергия;</b></li>
+                <li><b>ФЕЦ за продажба на ел. енергия;</b></li>
+                <li><b>Батерийни стопанства към ФЕЦ за битови и промишлени цели.</b></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Service 2-->
+      <div class="row my-5" id="JOS">
+        <div class="col picture-left-side p-0">
+          <img class="rounded mx-auto d-block" src="../../Pics/Service/Service-2.jpg" alt="Service two">
+        </div>
+
+        <div class="col text-right-side py-5">
+          <h1 class="mb-3 px-1">Проектиране и изграждане на ел. инсталации за жилищни и обществени сгради:
+          </h1>
+          <p class="pt-3 px-1">&nbsp;&nbsp;&nbsp;&nbsp;<b>ELOCRE</b> предлага на своите клиенти проектиране и изграждане
+            на ел. инсталации за жилищни и обществени сгради, съобразено външния вид на сградата, интериора и
+            предназначението й.<br><br></p>
+
+          <div class="row pl-1 hide_mobile">
+            <div class="col">
+              <p class="hide_mobile"><b>Проектиране на:</b></p>
+              <ul class="hide_mobile pl-5">
+                <li><b>Силова инсталация</b></li>
+                <li><b>Осветителна инсталация</b></li>
+                <li><b>Слаботокова инсталация</b></li>
+                <li><b>Защитна заземителна инсталация</b></li>
+                <li><b>Мълниезащитна заземителна инсталация.</b></li>
+              </ul>
+            </div>
+
+            <div class="col">
+              <p class="hide_mobile"><b>Изграждане на:</b></p>
+              <ul class="hide_mobile pl-5">
+                <li><b>Силова инсталация;</b></li>
+                <li><b>Осветителна инсталация;</b></li>
+                <li><b>Видеонаблюдение;</b></li>
+                <li><b>Сигнално-охранителна инсталация;</b></li>
+                <li><b>Контрол на достъпа;</b></li>
+                <li><b>Аварийно-оповестителна инсталация;</b></li>
+                <li><b>TV и LAN мрежа;</b></li>
+                <li><b>Звънчево-домофонна инсталация;</b></li>
+                <li><b>Пожароизвестителна инсталация;</b></li>
+                <li><b>Защитна заземителна инсталация;</b></li>
+                <li><b>Мълниезащитна заземителна инсталация.</b></li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="show-stages text-center">
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#reg-modal-2">
+              Oсновни етапи</button>
+
+            <button type="button" class="btn btn-dark hide" data-toggle="modal"
+              data-target="#reg-modal-mobile-2-1">Проектиране</button>
+
+            <button type="button" class="btn btn-dark hide" data-toggle="modal"
+              data-target="#reg-modal-mobile-2-2">Изграждане
+            </button>
+          </div>
+        </div>
+      </div>
+      <hr>
+
+      <!--Modal 2-->
+      <div class="modal fade" id="reg-modal-2" tabindex="-1" aria-labelledby="JOS-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title pl-3" id="JOS-modal-title">Етапите при проектиране на инвестиционното намерение, които предлагаме са:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li><b>Предпроектни проучвания и консултации</b> – Определяне на главните електротехнически параметри на
+                  сградата за присъединяване към електроразпределителната мрежа.</li>
+                <li><b>Идеен проект</b> – Тази фаза е концептуална. В нея се изготвят множество варианти на вашето
+                  инвестиционно намерение, свързани с предназначението на самата инсталация.</li>
+                <li><b>Технически проект</b> – С техническия проект се доизясняват и допълват проектните решения на
+                  идейния проект. В него са изяснени много от въпросите, свързани със строително-монтажните работи.
+                </li>
+                <li><b>Работен проект</b> – Съдържа детайлно графично и текстово представяне на проектното решение, отговарящо на заданието на възложителя, предназначението на инсталацията и действащото нормативно законодателство.</li>
+                <li><b>Екзекутивна документация</b> - Нанасяне на измененията по време на строителството в ел. проекта с
+                  цел улеснен ремонт и поддръжка по време на експлоатацията.</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal Mobile-2-1-->
+      <div class="modal fade" id="reg-modal-mobile-2-1" tabindex="-1" aria-labelledby="JOS-modal-title-mobile-1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="JOS-modal-title-mobile-1">Проектиране на:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li><b>Силова инсталация</b></li>
+                <li><b>Осветителна инсталация</b></li>
+                <li><b>Слаботокова инсталация</b></li>
+                <li><b>Защитна заземителна инсталация</b></li>
+                <li><b>Мълниезащитна заземителна инсталация.</b></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal Mobile-2-2-->
+      <div class="modal fade" id="reg-modal-mobile-2-2" tabindex="-1" aria-labelledby="JOS-modal-title-mobile-2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title pl-3" id="JOS-modal-title-mobile-2">Изграждане на:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li><b>Силова инсталация;</b></li>
+                <li><b>Осветителна инсталация;</b></li>
+                <li><b>Видеонаблюдение;</b></li>
+                <li><b>Сигнално-охранителна инсталация;</b></li>
+                <li><b>Контрол на достъпа;</b></li>
+                <li><b>Аварийно-оповестителна инсталация;</b></li>
+                <li><b>TV и LAN мрежа;</b></li>
+                <li><b>Звънчево-домофонна инсталация;</b></li>
+                <li><b>Пожароизвестителна инсталация;</b></li>
+                <li><b>Защитна заземителна инсталация;</b></li>
+                <li><b>Мълниезащитна заземителна инсталация.</b></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Service 3-->
+      <div class="row" id="PS">
+        <div class="col text-left-side px-5">
+          <h1 class="mb-3 px-2">Проектиране и изграждане на ел. инсталации за производствени сгради:</h1>
+          <p class="pt-3 px-1">&nbsp;&nbsp;&nbsp;&nbsp;<b>ELOCRE</b> предлага на своите клиенти проектиране и изграждане
+            на ел. инсталации за производствени сгради съобразено спецификата и дейността на производствения процес.
+            <br><br>
+          </p>
+          <div class="row pl-1 hide_mobile">
+            <div class="col">
+              <p class="hide_mobile px-3"><b>Някои от основните проектантски услуги са:</b></p>
+              <ul class="hide_mobile pl-5">
+                <li><b>Силова инсталация;</b></li>
+                <li><b>Осветителна инсталация;</b></li>
+                <li><b>Слаботокова инсталация;</b></li>
+                <li><b>Защитна заземителна инсталация;</b></li>
+                <li><b>Мълниезащитна заземителна инсталация.</b></li>
+              </ul>
+            </div>
+            <div class="col">
+              <p class="hide_mobile"><b>Изграждане на:</b></p>
+              <ul class="hide_mobile pl-5">
+                <li><b>Силова инсталация;</b></li>
+                <li><b>Осветителна инсталация;</b></li>
+                <li><b>Видеонаблюдение;</b></li>
+                <li><b>Сигнално-охранителна инсталация;</b></li>
+                <li><b>Контрол на достъпа;</b></li>
+                <li><b>Аварийно-оповестителна инсталация;</b></li>
+                <li><b>TV и LAN мрежа;</b></li>
+                <li><b>Пожароизвестителна инсталация;</b></li>
+                <li><b>Защитна заземителна инсталация;</b></li>
+                <li><b>Мълниезащитна заземителна инсталация;</b></li>
+                <li><b>Кабелни и въздушни електропроводни линии;</b></li>
+                <li><b>БКТП.</b></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="show-stages text-center">
+            <button type="button" class="btn btn-dark" data-toggle="modal" data-target="#reg-modal-3">
+              Oсновни етапи</button>
+
+            <button type="button" class="btn btn-dark hide" data-toggle="modal"
+              data-target="#reg-modal-mobile-3-1">Проектиране</button>
+
+            <button type="button" class="btn btn-dark hide" data-toggle="modal"
+              data-target="#reg-modal-mobile-3-2">Изграждане</button>
+          </div>
+        </div>
+
+        <div class="col picture-right-side p-0">
+          <img class="rounded mx-auto d-block" src="../../Pics/Service/Service-3.jpg" alt="Service three">
+        </div>
+      </div>
+
+      <!--Modal 3-->
+      <div class="modal fade" id="reg-modal-3" tabindex="-1" aria-labelledby="PS-modal-title" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title pl-3" id="PS-modal-title">Етапите при проектиране на инвестиционното намерение,
+                които предлагане са:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li><b>Предпроектни проучвания и консултации</b> – Определяне на главните електротехнически параметри на
+                  предприятието за присъединяване към електроразпределителната мрежа.</li>
+                <li><b>Идеен проект</b> – Тази фаза е концептуална. В нея се изготвят множество варианти на вашето
+                  инвестиционно намерение, свързани с предназначението на съответната инсталация.</li>
+                <li><b>Технически проект</b> – С техническия проект се доизясняват и допълват проектните решения на
+                  идейния проект. В него са изяснени много от въпросите, свързани с технологичните процеси и
+                  строително-монтажните работи.</li>
+                <li><b>Работен проект</b> – Съдържа детайлно графично и текстово представяне на проектното решение, отговарящо на заданието на възложителя, предназначението на инсталацията и действащото нормативно законодателство.</li>
+                <li><b>Екзекутивна документация</b> - Нанасяне на измененията по време на строителството в ел. проекта с
+                  цел улеснен ремонт и поддръжка по време на експлоатацията.</li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal Mobile-3-1-->
+      <div class="modal fade" id="reg-modal-mobile-3-1" tabindex="-1" aria-labelledby="PS-modal-title-mobile-3-1"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="PS-modal-title-mobile-3-1">Някои от основните проектантски услуги са:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li><b>Силова инсталация;</b></li>
+                <li><b>Осветителна инсталация;</b></li>
+                <li><b>Слаботокова инсталация;</b></li>
+                <li><b>Защитна заземителна инсталация;</b></li>
+                <li><b>Мълниезащитна заземителна инсталация.</b></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--Modal Mobile-3-2-->
+      <div class="modal fade" id="reg-modal-mobile-3-2" tabindex="-1" aria-labelledby="PS-modal-title-mobile-3-2"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h2 class="modal-title" id="PS-modal-title-mobile-3-2">Изграждане на:</h2>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close">X</button>
+            </div>
+            <div class="modal-body">
+              <ul class="px-5 py-2">
+                <li><b>Силова инсталация;</b></li>
+                <li><b>Осветителна инсталация;</b></li>
+                <li><b>Видеонаблюдение;</b></li>
+                <li><b>Сигнално-охранителна инсталация;</b></li>
+                <li><b>Контрол на достъпа;</b></li>
+                <li><b>Аварийно-оповестителна инсталация;</b></li>
+                <li><b>TV и LAN мрежа;</b></li>
+                <li><b>Пожароизвестителна инсталация;</b></li>
+                <li><b>Защитна заземителна инсталация;</b></li>
+                <li><b>Мълниезащитна заземителна инсталация;</b></li>
+                <li><b>Кабелни и въздушни електропроводни линии;</b></li>
+                <li><b>БКТП.</b></li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Затвори</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="end">
+
+    <!--Footer-->
+    <div class="footer">
+      <footer class="d-flex flex-wrap justify-content-between py-2 bg-dark text-white">
+        <div class="col-md-4 d-flex align-items-center">
+          <a class="navbar-brand ml-4" href="../../index.html">
+            <img src="../../Pics/Logos/ELCORE_logo_fullcolor_cmyk.png" alt="Logo" id="logo-footer">
+          </a>
+        </div>
+
+        <ul class="nav col-md-6 justify-content-end list-unstyled d-flex p-2">
+          <li class="ms-3 pt-1" id="phone"><a class="fa fa-phone">&nbsp;&nbsp;0892 938 147 – инж. Венелин Симеонов<svg
+                class="bi" width="30" height="24"></svg></a></li>
+          <li class="ms-3 pt-1" id="email"><a class="fa fa-envelope"
+              href="mailto:info@elcore.bg">&nbsp;&nbsp;info@elcore.bg<svg class="bi" width="30" height="24"></svg></a>
+          </li>
+          <li class="ms-3 pt-1"><a class="fa fa-facebook" target="_blank"
+              href="https://www.facebook.com/profile.php?id=61554967061931&is_tour_completed=true"><svg class="bi"
+                width="30" height="24">
+                <use xlink:href="#facebook"></use>
+              </svg></a></li>
+        </ul>
+      </footer>
+    </div>
+  </section>
+
+</body>
+
+</html>
